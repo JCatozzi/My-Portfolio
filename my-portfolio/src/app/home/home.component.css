@@ -1,0 +1,74 @@
+.homeContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-size: 0;
+  color: white;
+  background-color: black;
+}
+
+.blocks {
+  display: inline-block;
+  height: 50%;
+  width: 50%;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.innerContainer {
+  height: 100%;
+  width: 100%;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.aboutMe:hover {
+  /* background-color: #2e86c1ba; */
+  box-shadow: 5px 5px 5px #2ecc71ba;
+  color: #2ecc71 !important;
+}
+
+.contact:hover {
+  /* background-color: #2ecc71ba; */
+  box-shadow: -5px -5px 5px #2e86c1ba;
+  color: #2e86c1 !important;
+}
+
+.experience:hover {
+  /* background-color: #e74c3cba; */
+  box-shadow: -5px 5px 5px #f4d03fba;
+  color: #f4d03f !important;
+}
+
+.sideProj:hover {
+  /* background-color: #f4d03fba; */
+  box-shadow: 5px -5px 5px #e74c3cba;
+  color: #e74c3c !important;
+}
+
+.title {
+  width: 600px;
+  height: 70px;
+  top: calc(50% - 35px);
+  right: calc(50% - 300px);
+  position: absolute;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: color 1.5s;
+}
+
+.name {
+  font-size: 60px;
+}
+
+.profession {
+  font-size: 40px;
+}

@@ -1,0 +1,46 @@
+<div class="homeContainer">
+  <div class="blocks">
+    <div
+      class="aboutMe innerContainer"
+      (mouseover)="fontColor = '#2ecc71'"
+      [routerLink]="['primary/', 1]"
+    >
+      ABOUT
+    </div>
+  </div>
+  <div class="blocks">
+    <div
+      class="experience innerContainer"
+      (mouseover)="fontColor = '#f4d03f'"
+      [routerLink]="['primary/', 2]"
+    >
+      EXPERIENCE
+    </div>
+  </div>
+  <div class="blocks">
+    <div
+      class="sideProj innerContainer"
+      (mouseover)="fontColor = '#e74c3c'"
+      [routerLink]="['primary/', 3]"
+    >
+      PROJECTS
+    </div>
+  </div>
+  <div class="blocks">
+    <div
+      class="contact innerContainer"
+      (mouseover)="fontColor = '#2e86c1'"
+      [routerLink]="['primary/', 4]"
+    >
+      CONTACT
+    </div>
+  </div>
+  <div class="title" [ngStyle]="{ color: fontColor }">
+    <div class="name">
+      JACKSON CATOZZI
+    </div>
+    <div class="profession">
+      SOFTWARE DEVELOPER
+    </div>
+  </div>
+</div>
