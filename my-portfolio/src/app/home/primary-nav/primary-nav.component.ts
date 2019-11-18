@@ -1,5 +1,4 @@
-import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute } from "@angular/router";
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
   selector: "app-primary-nav",
@@ -7,19 +6,19 @@ import { ActivatedRoute } from "@angular/router";
   styleUrls: ["./primary-nav.component.css"]
 })
 export class PrimaryNavComponent implements OnInit {
-  constructor(private route: ActivatedRoute) {}
+  constructor() {}
 
   titleColor: string;
   transition: boolean = false;
+  @Input() toBeSelected: number;
   selected: number;
 
   ngOnInit() {
     setTimeout(() => {
       this.transition = true;
       setTimeout(() => {
-        this.selected = this.route.snapshot.params["selected"];
-        console.log("selected:", this.selected);
-      }, 1500);
+        this.selected = this.toBeSelected;
+      }, 1000);
     }, 300);
   }
 }

@@ -7,14 +7,6 @@
   background-color: black;
 }
 
-.blocks {
-  display: inline-block;
-  height: 50%;
-  width: 50%;
-  font-size: 40px;
-  cursor: pointer;
-}
-
 .innerContainer {
   height: 100%;
   width: 100%;
@@ -26,49 +18,189 @@
   border-radius: 50%;
 }
 
-.aboutMe:hover {
-  /* background-color: #2e86c1ba; */
-  box-shadow: 5px 5px 5px #2ecc71ba;
-  color: #2ecc71 !important;
+@media only screen and (min-width: 1200px) {
+  .blocks {
+    display: inline-block;
+    height: 50%;
+    width: 50%;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+  .title {
+    width: 600px;
+    height: 70px;
+    top: calc(50% - 35px);
+    right: calc(50% - 300px);
+    position: absolute;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: color 1.5s;
+  }
+
+  .name {
+    font-size: 60px;
+  }
+
+  .profession {
+    font-size: 40px;
+  }
+
+  .aboutMe:hover {
+    /* background-color: #2e86c1ba; */
+    box-shadow: 5px 5px 5px #2ecc71ba;
+    color: #2ecc71 !important;
+  }
+
+  .contact:hover {
+    /* background-color: #2ecc71ba; */
+    box-shadow: -5px -5px 5px #2e86c1ba;
+    color: #2e86c1 !important;
+  }
+
+  .experience:hover {
+    /* background-color: #e74c3cba; */
+    box-shadow: -5px 5px 5px #f4d03fba;
+    color: #f4d03f !important;
+  }
+
+  .sideProj:hover {
+    /* background-color: #f4d03fba; */
+    box-shadow: 5px -5px 5px #e74c3cba;
+    color: #e74c3c !important;
+  }
 }
 
-.contact:hover {
-  /* background-color: #2ecc71ba; */
-  box-shadow: -5px -5px 5px #2e86c1ba;
-  color: #2e86c1 !important;
+@media only screen and (max-width: 1200px) and (min-width: 440px) {
+  .aboutMe {
+    color: #2ecc71;
+  }
+
+  .contact {
+    color: #2e86c1;
+  }
+
+  .experience {
+    color: #f4d03f;
+  }
+
+  .sideProj {
+    color: #e74c3c;
+  }
+
+  .aboutMe:hover {
+    box-shadow: 5px 5px 5px #2ecc71ba;
+  }
+
+  .contact:hover {
+    box-shadow: -5px -5px 5px #2e86c1ba;
+  }
+
+  .experience:hover {
+    box-shadow: -5px 5px 5px #f4d03fba;
+  }
+
+  .sideProj:hover {
+    box-shadow: 5px -5px 5px #e74c3cba;
+  }
+
+  .blocks {
+    display: inline-block;
+    height: 50%;
+    width: 50%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .title {
+    width: 600px;
+    height: 70px;
+    top: calc(50% - 35px);
+    right: calc(50% - 300px);
+    position: absolute;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: color 1.5s;
+  }
+
+  .name {
+    font-size: 60px;
+  }
+
+  .profession {
+    font-size: 40px;
+  }
 }
 
-.experience:hover {
-  /* background-color: #e74c3cba; */
-  box-shadow: -5px 5px 5px #f4d03fba;
-  color: #f4d03f !important;
-}
+@media only screen and (max-width: 440px) and (min-width: 300px) {
+  .aboutMe {
+    color: #2ecc71;
+  }
 
-.sideProj:hover {
-  /* background-color: #f4d03fba; */
-  box-shadow: 5px -5px 5px #e74c3cba;
-  color: #e74c3c !important;
-}
+  .contact {
+    color: #2e86c1;
+  }
 
-.title {
-  width: 600px;
-  height: 70px;
-  top: calc(50% - 35px);
-  right: calc(50% - 300px);
-  position: absolute;
-  font-weight: 600;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: color 1.5s;
-}
+  .experience {
+    color: #f4d03f;
+  }
 
-.name {
-  font-size: 60px;
-}
+  .sideProj {
+    color: #e74c3c;
+  }
 
-.profession {
-  font-size: 40px;
+  .aboutMe:hover {
+    box-shadow: 5px 5px 5px #2ecc71ba;
+  }
+
+  .contact:hover {
+    box-shadow: -5px -5px 5px #2e86c1ba;
+  }
+
+  .experience:hover {
+    box-shadow: -5px 5px 5px #f4d03fba;
+  }
+
+  .sideProj:hover {
+    box-shadow: 5px -5px 5px #e74c3cba;
+  }
+
+  .blocks {
+    display: inline-block;
+    height: 50%;
+    width: 50%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .title {
+    width: 300px;
+    height: 70px;
+    top: calc(50% - 35px);
+    right: calc(50% - 150px);
+    position: absolute;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: color 1.5s;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .profession {
+    font-size: 20px;
+  }
 }

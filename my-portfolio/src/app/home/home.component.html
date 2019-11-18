@@ -1,9 +1,9 @@
-<div class="homeContainer">
+<div class="homeContainer" *ngIf="navigationMode === 'home'">
   <div class="blocks">
     <div
       class="aboutMe innerContainer"
       (mouseover)="fontColor = '#2ecc71'"
-      [routerLink]="['primary/', 1]"
+      (click)="toPrimaryNav(1)"
     >
       ABOUT
     </div>
@@ -12,7 +12,7 @@
     <div
       class="experience innerContainer"
       (mouseover)="fontColor = '#f4d03f'"
-      [routerLink]="['primary/', 2]"
+      (click)="toPrimaryNav(2)"
     >
       EXPERIENCE
     </div>
@@ -21,7 +21,7 @@
     <div
       class="sideProj innerContainer"
       (mouseover)="fontColor = '#e74c3c'"
-      [routerLink]="['primary/', 3]"
+      (click)="toPrimaryNav(3)"
     >
       PROJECTS
     </div>
@@ -30,7 +30,7 @@
     <div
       class="contact innerContainer"
       (mouseover)="fontColor = '#2e86c1'"
-      [routerLink]="['primary/', 4]"
+      (click)="toPrimaryNav(4)"
     >
       CONTACT
     </div>
@@ -44,3 +44,8 @@
     </div>
   </div>
 </div>
+
+<app-primary-nav
+  *ngIf="navigationMode === 'primary'"
+  [toBeSelected]="selected"
+></app-primary-nav>

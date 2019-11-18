@@ -9,6 +9,15 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   titleColor: string;
+  navigationMode: string = "home";
+  selected: number;
 
   ngOnInit() {}
+
+  toPrimaryNav(selectedIndex) {
+    setTimeout(() => {
+      this.selected = selectedIndex;
+      this.navigationMode = "primary";
+    }, 1000);
+  }
 }
