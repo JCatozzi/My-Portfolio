@@ -1,4 +1,4 @@
-<div class="homeContainer">
+<div class="primaryNavContainer">
   <div
     class="labels aboutMe"
     (click)="selected = 1"
@@ -46,5 +46,8 @@
     <div class="innerContainer">
       CONTACT
     </div>
+  </div>
+  <div class="navigationContainer">
+    <app-about *ngIf="selected === 1"></app-about>
   </div>
 </div>
