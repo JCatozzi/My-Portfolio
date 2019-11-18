@@ -15,7 +15,8 @@
   margin-top: 18vh;
   width: 95%;
   max-width: 1000px;
-  height: 75vh;
+  max-height: 80vh;
+  overflow: auto;
 }
 
 /* about me */
@@ -332,4 +333,8 @@
     left: calc(50% - 80px);
     font-size: 10px;
   }
+}
+
+.aboutOutline {
+  box-shadow: 0 0 15px #2ecc71ba;
 }

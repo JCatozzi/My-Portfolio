@@ -47,7 +47,12 @@
       CONTACT
     </div>
   </div>
-  <div class="navigationContainer">
+  <div
+    class="navigationContainer"
+    [ngClass]="{
+      aboutOutline: selected == 1
+    }"
+  >
     <app-about *ngIf="selected === 1"></app-about>
   </div>
 </div>

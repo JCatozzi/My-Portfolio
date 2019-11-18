@@ -7,12 +7,13 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AboutComponent implements OnInit {
   lightsOn: boolean = false;
+  animationIncrement: number = 0;
 
   constructor() {}
 
   ngOnInit() {
-    setTimeout(() => {
-      this.lightsOn = true;
-    }, 500);
+    setInterval(() => {
+      this.animationIncrement++;
+    }, 600);
   }
 }
