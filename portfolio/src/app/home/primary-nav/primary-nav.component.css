@@ -1,0 +1,340 @@
+/* home */
+.primaryNavContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-size: 0;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navigationContainer {
+  margin-top: 120px;
+  width: 95%;
+  max-width: 1000px;
+  max-height: calc(100% - 140px);
+  overflow: auto;
+}
+
+/* about me */
+.aboutMe:hover {
+  box-shadow: 5px 5px 5px #2ecc71;
+}
+
+.aboutMeSelected {
+  box-shadow: 5px 5px 5px #2ecc71;
+}
+
+/* contact */
+.contact:hover {
+  box-shadow: 5px 5px 5px #2e86c1;
+}
+
+.contactSelected {
+  box-shadow: 5px 5px 5px #2e86c1;
+}
+
+/* experience */
+.experience:hover {
+  box-shadow: 5px 5px 5px #f4d03f;
+}
+
+.experienceSelected {
+  box-shadow: 5px 5px 5px #f4d03f;
+}
+
+/* project */
+.sideProj:hover {
+  box-shadow: 5px 5px 5px #e74c3c;
+}
+
+.sideProjSelected {
+  box-shadow: 5px 5px 5px #e74c3c;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* labels */
+  .labels {
+    display: block;
+    width: 280px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s ease-in-out;
+  }
+
+  /* contact */
+  .contact {
+    color: #2e86c1 !important;
+    top: calc(75% - 25px);
+    right: calc(25% - 140px);
+  }
+
+  .contactNewPosition {
+    top: 40px;
+    right: calc(50% - 590px);
+  }
+
+  /* about me */
+  .aboutMe {
+    color: #2ecc71 !important;
+    top: calc(25% - 25px);
+    left: calc(25% - 140px);
+  }
+
+  .aboutNewPosition {
+    top: 40px;
+    left: calc(50% - 590px);
+  }
+
+  /* project */
+  .sideProj {
+    color: #e74c3c !important;
+    right: calc(75% - 140px);
+    top: calc(75% - 25px);
+  }
+
+  .projectNewPosition {
+    top: 40px;
+    right: calc(50% - 290px);
+  }
+
+  /* experience */
+  .experience {
+    color: #f4d03f !important;
+    top: calc(25% - 25px);
+    left: calc(75% - 140px);
+  }
+
+  .experienceNewPosition {
+    top: 40px;
+    left: calc(50% - 290px);
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 675px) {
+  /* labels */
+  .labels {
+    display: block;
+    width: 166px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 1.5s ease-in-out;
+  }
+
+  /* contact */
+  .contact {
+    color: #2e86c1 !important;
+    top: calc(75% - 25px);
+    right: calc(25% - 83px);
+  }
+
+  .contactNewPosition {
+    top: 40px;
+    right: calc(50% - 327px);
+  }
+
+  /* about me */
+  .aboutMe {
+    color: #2ecc71 !important;
+    top: calc(25% - 25px);
+    left: calc(25% - 83px);
+  }
+
+  .aboutNewPosition {
+    top: 40px;
+    left: calc(50% - 342px);
+  }
+
+  /* project */
+  .sideProj {
+    color: #e74c3c !important;
+    right: calc(75% - 83px);
+    top: calc(75% - 25px);
+  }
+
+  .projectNewPosition {
+    top: 40px;
+    right: calc(50% - 159px);
+  }
+
+  /* experience */
+  .experience {
+    color: #f4d03f !important;
+    top: calc(25% - 25px);
+    left: calc(75% - 83px);
+  }
+
+  .experienceNewPosition {
+    top: 40px;
+    left: calc(50% - 175px);
+  }
+}
+
+@media only screen and (max-width: 675px) and (min-width: 440px) {
+  /* labels */
+  .labels {
+    display: block;
+    width: 110px;
+    height: 36px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    transition: all 1.5s ease-in-out;
+  }
+
+  /* contact */
+  .contact {
+    color: #2e86c1 !important;
+    top: calc(75% - 25px);
+    right: calc(25% - 55px);
+  }
+
+  .contactNewPosition {
+    top: 40px;
+    right: calc(50% - 220px);
+    font-size: 12px;
+  }
+
+  /* about me */
+  .aboutMe {
+    color: #2ecc71 !important;
+    top: calc(25% - 25px);
+    left: calc(25% - 55px);
+  }
+
+  .aboutNewPosition {
+    top: 40px;
+    left: calc(50% - 220px);
+    font-size: 12px;
+  }
+
+  /* project */
+  .sideProj {
+    color: #e74c3c !important;
+    right: calc(75% - 55px);
+    top: calc(75% - 25px);
+  }
+
+  .projectNewPosition {
+    top: 40px;
+    right: calc(50% - 110px);
+    font-size: 12px;
+  }
+
+  /* experience */
+  .experience {
+    color: #f4d03f !important;
+    top: calc(25% - 25px);
+    left: calc(75% - 55px);
+  }
+
+  .experienceNewPosition {
+    top: 40px;
+    left: calc(50% - 110px);
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 440px) and (min-width: 300px) {
+  /* labels */
+  .labels {
+    display: block;
+    width: 80px;
+    height: 32px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    transition: all 1.5s ease-in-out;
+  }
+
+  /* contact */
+  .contact {
+    color: #2e86c1 !important;
+    top: calc(75% - 16px);
+    right: calc(25% - 40px);
+  }
+
+  .contactNewPosition {
+    top: 40px;
+    right: calc(50% - 160px);
+    font-size: 11px;
+  }
+
+  /* about me */
+  .aboutMe {
+    color: #2ecc71 !important;
+    top: calc(25% - 16px);
+    left: calc(25% - 40px);
+  }
+
+  .aboutNewPosition {
+    top: 40px;
+    left: calc(50% - 160px);
+    font-size: 11px;
+  }
+
+  /* project */
+  .sideProj {
+    color: #e74c3c !important;
+    right: calc(75% - 40px);
+    top: calc(75% - 16px);
+  }
+
+  .projectNewPosition {
+    top: 40px;
+    right: calc(50% - 80px);
+    font-size: 11px;
+  }
+
+  /* experience */
+  .experience {
+    color: #f4d03f !important;
+    top: calc(25% - 16px);
+    left: calc(75% - 40px);
+  }
+
+  .experienceNewPosition {
+    top: 40px;
+    left: calc(50% - 80px);
+    font-size: 10px;
+  }
+}
+
+.aboutOutline {
+  box-shadow: 0 0 15px #2ecc71ba;
+}
