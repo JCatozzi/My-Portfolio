@@ -14,6 +14,6 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     setInterval(() => {
       this.animationIncrement++;
-    }, 600);
+    }, 300);
   }
 }
