@@ -32,7 +32,7 @@
     }"
   >
     <div class="innerContainer">
-      PROJECTS
+      PORTFOLIO
     </div>
   </div>
   <div
@@ -50,9 +50,14 @@
   <div
     class="navigationContainer"
     [ngClass]="{
-      aboutOutline: selected == 1
+      aboutOutline: selected == 1,
+      expOutline: selected == 2,
+      portfolioOutline: selected == 3,
+      contactOutline: selected == 4
     }"
   >
     <app-about *ngIf="selected === 1"></app-about>
+    <app-experience *ngIf="selected === 2"></app-experience>
+    <app-portfolio *ngIf="selected === 3"></app-portfolio>
   </div>
 </div>

@@ -1,12 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: "app-about",
-  templateUrl: "./about.component.html",
-  styleUrls: ["./about.component.css"]
+  selector: "app-experience",
+  templateUrl: "./experience.component.html",
+  styleUrls: ["./experience.component.css"]
 })
-export class AboutComponent implements OnInit {
-  lightsOn: boolean = false;
+export class ExperienceComponent implements OnInit {
   animationIncrement: number = 0;
 
   constructor() {}
@@ -14,6 +13,6 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     setInterval(() => {
       this.animationIncrement++;
-    }, 200);
+    }, 100);
   }
 }

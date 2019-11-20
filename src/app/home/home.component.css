@@ -1,6 +1,7 @@
 .homeContainer {
-  height: 100%;
-  width: 100%;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  margin: 10px auto 10px;
   position: relative;
   font-size: 0;
   color: white;
@@ -52,25 +53,25 @@
 
   .aboutMe:hover {
     /* background-color: #2e86c1ba; */
-    box-shadow: 5px 5px 5px #2ecc71ba;
+    box-shadow: -5px -5px 5px #2ecc71ba;
     color: #2ecc71 !important;
   }
 
   .contact:hover {
     /* background-color: #2ecc71ba; */
-    box-shadow: -5px -5px 5px #2e86c1ba;
+    box-shadow: 5px 5px 5px #2e86c1ba;
     color: #2e86c1 !important;
   }
 
   .experience:hover {
     /* background-color: #e74c3cba; */
-    box-shadow: -5px 5px 5px #f4d03fba;
+    box-shadow: 5px -5px 5px #f4d03fba;
     color: #f4d03f !important;
   }
 
   .sideProj:hover {
     /* background-color: #f4d03fba; */
-    box-shadow: 5px -5px 5px #e74c3cba;
+    box-shadow: -5px 5px 5px #e74c3cba;
     color: #e74c3c !important;
   }
 }
@@ -93,19 +94,19 @@
   }
 
   .aboutMe:hover {
-    box-shadow: 5px 5px 5px #2ecc71ba;
+    box-shadow: -5px -5px 5px #2ecc71ba;
   }
 
   .contact:hover {
-    box-shadow: -5px -5px 5px #2e86c1ba;
+    box-shadow: 5px 5px 5px #2e86c1ba;
   }
 
   .experience:hover {
-    box-shadow: -5px 5px 5px #f4d03fba;
+    box-shadow: 5px -5px 5px #f4d03fba;
   }
 
   .sideProj:hover {
-    box-shadow: 5px -5px 5px #e74c3cba;
+    box-shadow: -5px 5px 5px #e74c3cba;
   }
 
   .blocks {
@@ -158,19 +159,19 @@
   }
 
   .aboutMe:hover {
-    box-shadow: 5px 5px 5px #2ecc71ba;
+    box-shadow: -5px -5px 5px #2ecc71ba;
   }
 
   .contact:hover {
-    box-shadow: -5px -5px 5px #2e86c1ba;
+    box-shadow: 5px 5px 5px #2e86c1ba;
   }
 
   .experience:hover {
-    box-shadow: -5px 5px 5px #f4d03fba;
+    box-shadow: 5px -5px 5px #f4d03fba;
   }
 
   .sideProj:hover {
-    box-shadow: 5px -5px 5px #e74c3cba;
+    box-shadow: -5px 5px 5px #e74c3cba;
   }
 
   .blocks {

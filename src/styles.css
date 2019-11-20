@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import "~viewerjs/dist/viewer.css";
 html,
 body {
   width: 100%;
@@ -9,6 +9,8 @@ body {
   overflow: hidden;
   touch-action: none;
   background-color: rgba(0, 0, 0, 0);
+  background-color: black;
+  font-family: FreeMono, monospace;
 }
 
 ::-webkit-scrollbar {

@@ -1,7 +1,8 @@
 /* home */
 .primaryNavContainer {
-  height: 100%;
-  width: 100%;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  margin: 10px auto 10px;
   position: relative;
   font-size: 0;
   color: white;
@@ -17,6 +18,7 @@
   max-width: 1000px;
   max-height: calc(100% - 140px);
   overflow: auto;
+  transition: all 1.5s;
 }
 
 /* about me */
@@ -336,5 +338,17 @@
 }
 
 .aboutOutline {
-  box-shadow: 0 0 15px #2ecc71ba;
+  box-shadow: 0 0 15px #2ecc71ca;
+}
+
+.expOutline {
+  box-shadow: 0 0 15px #f4d03fca;
+}
+
+.portfolioOutline {
+  box-shadow: 0 0 15px #e74c3cba;
+}
+
+.contactOutline {
+  box-shadow: 0 0 15px #2e86c1ba;
 }
