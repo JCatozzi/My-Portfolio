@@ -9,6 +9,11 @@ export class AboutComponent implements OnInit {
   lightsOn: boolean = false;
   animationIncrement: number = 0;
 
+  public viewerOptions: any = {
+    navbar: false,
+    toolbar: false
+  };
+
   constructor() {}
 
   ngOnInit() {

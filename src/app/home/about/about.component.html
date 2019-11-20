@@ -4,6 +4,8 @@
   </div>
   <div
     class="headshotContainer"
+    ngxViewer
+    [viewerOptions]="viewerOptions"
     [ngClass]="{
       lightsOn: animationIncrement > 2,
       scaleUp: animationIncrement > 1
