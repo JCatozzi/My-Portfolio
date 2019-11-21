@@ -1,0 +1,124 @@
+.expContainer {
+  width: calc(100% - 20px);
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f4d03f;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.lightsOn {
+  box-shadow: 0 0 15px #2ecc71ba;
+}
+
+li {
+  transform: scale(0);
+  transition: all 1s ease-in-out;
+}
+
+/* ANIMATIONS */
+.scaleUp {
+  transform: scale(1) !important;
+}
+
+.scaleDown {
+  transition: all 2s ease-in-out;
+  transform: scale(0);
+}
+/* RESUME */
+.resumeDownload {
+  height: 40px;
+  width: 200px;
+}
+
+.resumeText {
+  color: #f4d03f;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.save {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.resumeLink {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SKILLS */
+.skillsContainer {
+  width: 95%;
+  margin: 15px auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.skills {
+  width: 40%;
+}
+
+.skillsTitle {
+  font-size: 40px;
+}
+
+.skillsList {
+  font-size: 30px;
+}
+
+/* JOBS */
+.jobsContainer {
+  width: 95%;
+  margin: 15px auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.jobsTitle {
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.jobs {
+  width: 80%;
+}
+
+.jobsList {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 440px) and (min-width: 300px) {
+  .skillsContainer {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+  }
+
+  .skills {
+    width: 80%;
+  }
+
+  .skillsTitle {
+    font-size: 30px;
+  }
+
+  .skillsList {
+    font-size: 20px;
+  }
+  .jobsTitle {
+    font-size: 25px;
+  }
+
+  .jobsList {
+    font-size: 17px;
+  }
+}
