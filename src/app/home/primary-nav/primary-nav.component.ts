@@ -21,4 +21,12 @@ export class PrimaryNavComponent implements OnInit {
       }, 1000);
     }, 300);
   }
+
+  onNavigate(selected) {
+    if (selected !== this.selected) {
+      this.selected = selected;
+      const scroller = document.getElementById("scrollContainer");
+      scroller.scrollTop = 0;
+    }
+  }
 }

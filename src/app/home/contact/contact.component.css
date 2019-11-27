@@ -1,0 +1,60 @@
+.contactContainer {
+  width: calc(100% - 20px);
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2e86c1 !important;
+  transition: all 3s;
+  margin: 10px;
+  opacity: 0;
+}
+
+.fadeIn {
+  opacity: 100;
+}
+
+.letsBuild {
+  font-size: 30px;
+  text-align: center;
+}
+
+.linksContainer {
+  font-size: 25px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.emailContainer {
+  width: 90%;
+  max-width: 575px;
+}
+
+.scaleUp {
+  transform: scale(1) !important;
+}
+
+.contentInput {
+  min-height: 300px;
+}
+
+.btn-send {
+  color: #fff;
+  background-color: #2e86c1;
+  border-color: #2e86c1;
+}
+
+@media only screen and (max-width: 440px) and (min-width: 300px) {
+  .letsBuild {
+    font-size: 25px;
+  }
+
+  .linksContainer {
+    font-size: 22px;
+  }
+}
+
+.click {
+  font-size: 13px;
+  font-style: italic;
+}

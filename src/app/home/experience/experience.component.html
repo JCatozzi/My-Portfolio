@@ -3,7 +3,11 @@
     class="resumeDownload scaleDown"
     [ngClass]="{ scaleUp: animationIncrement > 1 }"
   >
-    <a href="../assets/documents/resume.DOCX" download class="resumeLink">
+    <a
+      href="../assets/documents/Resume-JacksonCatozzi.PDF"
+      download
+      class="resumeLink"
+    >
       <img src="../assets/icons/save.svg" class="save" />
       <span class="resumeText">RESUME</span>
     </a>
@@ -11,10 +15,7 @@
 
   <div class="skillsContainer">
     <div class="skills">
-      <div
-        class="skillsTitle scaleDown"
-        [ngClass]="{ scaleUp: animationIncrement > 2 }"
-      >
+      <div class="skillsTitle" [ngClass]="{ fadeIn: animationIncrement > 2 }">
         TOP SKILLS
       </div>
       <ul class="skillsList">
@@ -31,10 +32,7 @@
       </ul>
     </div>
     <div class="skills">
-      <div
-        class="skillsTitle scaleDown"
-        [ngClass]="{ scaleUp: animationIncrement > 14 }"
-      >
+      <div class="skillsTitle" [ngClass]="{ fadeIn: animationIncrement > 14 }">
         OTHER SKILLS
       </div>
       <ul class="skillsList">
@@ -53,10 +51,7 @@
   </div>
   <div class="jobsContainer">
     <div class="jobs">
-      <div
-        class="jobsTitle scaleDown"
-        [ngClass]="{ scaleUp: animationIncrement > 26 }"
-      >
+      <div class="jobsTitle" [ngClass]="{ fadeIn: animationIncrement > 26 }">
         JOBS
       </div>
       <ul class="jobsList">
@@ -75,10 +70,7 @@
 
   <div class="jobsContainer">
     <div class="jobs">
-      <div
-        class="jobsTitle scaleDown"
-        [ngClass]="{ scaleUp: animationIncrement > 32 }"
-      >
+      <div class="jobsTitle" [ngClass]="{ fadeIn: animationIncrement > 32 }">
         Projects
       </div>
       <ul class="jobsList">
@@ -90,6 +82,25 @@
         <li [ngClass]="{ scaleUp: animationIncrement > 36 }">
           Adventures of Entropy Boy
           <br />- 2D side scroller <br />- Made with Unity (C#)
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="jobsContainer">
+    <div class="jobs">
+      <div class="jobsTitle" [ngClass]="{ fadeIn: animationIncrement > 38 }">
+        Education
+      </div>
+      <ul class="jobsList">
+        <li [ngClass]="{ scaleUp: animationIncrement > 40 }">
+          San Diego State University
+          <br />- B.S. Computer Science <br />- San Diego State Climbing Club
+        </li>
+        <br />
+        <li [ngClass]="{ scaleUp: animationIncrement > 42 }">
+          Rancho Bernardo High School
+          <br />- Royal Regiment Drum Line (3 years) <br />- 3.63 GPA
         </li>
       </ul>
     </div>

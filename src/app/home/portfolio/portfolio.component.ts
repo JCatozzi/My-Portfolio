@@ -8,6 +8,35 @@ import { Component, OnInit } from "@angular/core";
 export class PortfolioComponent implements OnInit {
   animationIncrement: number = 0;
 
+  screenshots: any[] = [
+    { caption: "Gradebook", url: "../assets/screenshots/gradebook.png" },
+    { caption: "Grader", url: "../assets/screenshots/freeFormGrader.png" },
+    {
+      caption: "Gradebook (edit mode)",
+      url: "../assets/screenshots/gradebookEdit.png"
+    },
+    {
+      caption: "Assessment Container",
+      url: "../assets/screenshots/container.png"
+    },
+    {
+      caption: "Assessment List",
+      url: "../assets/screenshots/assessmentList.png"
+    },
+    {
+      caption: " Multi-Media Question Response",
+      url: "../assets/screenshots/freeFormResponse.png"
+    },
+    {
+      caption: "Question Builder",
+      url: "../assets/screenshots/questionBuilder.png"
+    },
+    {
+      caption: "Clicker Question Presenter",
+      url: "../assets/screenshots/clickerPresenter.png"
+    }
+  ];
+
   public viewerOptions: any = {
     navbar: false,
     toolbar: {
@@ -33,6 +62,6 @@ export class PortfolioComponent implements OnInit {
   ngOnInit() {
     setInterval(() => {
       this.animationIncrement++;
-    }, 100);
+    }, 500);
   }
 }

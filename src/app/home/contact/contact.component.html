@@ -1,0 +1,71 @@
+<div class="contactContainer" [ngClass]="{ fadeIn: animate === true }">
+  <div class="letsBuild">
+    Lets build something together...
+  </div>
+
+  <div class="linksContainer">
+    Connect with me through
+    <br />
+    <br />
+    <a href="http://www.linkedin.com/in/jackson-catozzi">
+      <img src="../../assets/icons/linkedIn.svg" alt="" class="linkedInLogo" />
+    </a>
+    <br />
+    <br />
+    or
+    <br />
+    <a href="mailto:catozzi2433@gmail.com">Send Me An Email </a>
+    <br />
+    <div class="click">(click)</div>
+  </div>
+
+  <!-- <div class="emailContainer">
+    <form class="form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="name"
+          placeholder="Enter your name..."
+          [(ngModel)]="email.name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="alterEgo">Email</label>
+        <input
+          type="text"
+          class="form-control emailInput"
+          name="email"
+          placeholder="Enter your email..."
+          [(ngModel)]="email.email"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="alterEgo">Subject</label>
+        <input
+          type="text"
+          class="form-control subjectInput"
+          name="subject"
+          placeholder="Subject..."
+          [(ngModel)]="email.subject"
+        />
+      </div>
+      <div class="form-group">
+        <label for="alterEgo">Content</label>
+        <textarea
+          class="form-control contentInput"
+          name="content"
+          placeholder="Talk to me! Excited to hear about how we can help eachother achieve our goals!"
+          [(ngModel)]="email.content"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn" (click)="onSubmit()">
+        Send
+      </button>
+    </form>
+  </div> -->
+</div>

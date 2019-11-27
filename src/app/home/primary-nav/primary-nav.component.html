@@ -1,7 +1,7 @@
 <div class="primaryNavContainer">
   <div
     class="labels aboutMe"
-    (click)="selected = 1"
+    (click)="onNavigate(1)"
     [ngClass]="{
       aboutNewPosition: transition,
       aboutMeSelected: selected == 1
@@ -13,7 +13,7 @@
   </div>
   <div
     class="labels experience"
-    (click)="selected = 2"
+    (click)="onNavigate(2)"
     [ngClass]="{
       experienceNewPosition: transition,
       experienceSelected: selected == 2
@@ -25,7 +25,7 @@
   </div>
   <div
     class="labels sideProj"
-    (click)="selected = 3"
+    (click)="onNavigate(3)"
     [ngClass]="{
       projectNewPosition: transition,
       sideProjSelected: selected == 3
@@ -37,7 +37,7 @@
   </div>
   <div
     class="labels contact"
-    (click)="selected = 4"
+    (click)="onNavigate(4)"
     [ngClass]="{
       contactNewPosition: transition,
       contactSelected: selected == 4
@@ -48,6 +48,7 @@
     </div>
   </div>
   <div
+    id="scrollContainer"
     class="navigationContainer"
     [ngClass]="{
       aboutOutline: selected == 1,
@@ -59,5 +60,6 @@
     <app-about *ngIf="selected === 1"></app-about>
     <app-experience *ngIf="selected === 2"></app-experience>
     <app-portfolio *ngIf="selected === 3"></app-portfolio>
+    <app-contact *ngIf="selected === 4"></app-contact>
   </div>
 </div>

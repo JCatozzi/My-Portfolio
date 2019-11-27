@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { DeviceDetectorService } from "ngx-device-detector";
 
 @Component({
   selector: "app-home",
@@ -6,18 +7,26 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./home.component.css"]
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  constructor(private deviceService: DeviceDetectorService) {}
 
   titleColor: string;
   navigationMode: string = "home";
   selected: number;
+  isDesktopDevice: boolean;
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.isDesktopDevice = this.deviceService.isDesktop();
+  }
 
   toPrimaryNav(selectedIndex) {
-    setTimeout(() => {
+    if (this.isDesktopDevice) {
       this.selected = selectedIndex;
       this.navigationMode = "primary";
-    }, 1000);
+    } else {
+      setTimeout(() => {
+        this.selected = selectedIndex;
+        this.navigationMode = "primary";
+      }, 1000);
+    }
   }
 }

@@ -1,5 +1,5 @@
 <div class="aboutContainer">
-  <div class="name" [ngClass]="{ scaleUp: animationIncrement > 1 }">
+  <div class="name" [ngClass]="{ fadeIn: animationIncrement > 1 }">
     Jackson Catozzi
   </div>
   <div
@@ -8,7 +8,7 @@
     [viewerOptions]="viewerOptions"
     [ngClass]="{
       lightsOn: animationIncrement > 2,
-      scaleUp: animationIncrement > 1
+      fadeIn: animationIncrement > 1
     }"
   >
     <img class="headshot" src="../assets/headshot.jpg" />
