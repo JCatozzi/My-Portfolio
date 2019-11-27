@@ -264,6 +264,15 @@
 }
 
 @media only screen and (max-width: 440px) and (min-width: 300px) {
+  .navigationContainer {
+    margin-top: 100px;
+    width: 95%;
+    max-width: 1000px;
+    max-height: calc(100% - 120px);
+    overflow: auto;
+    transition: all 1.5s;
+  }
+
   /* labels */
   .labels {
     display: block;

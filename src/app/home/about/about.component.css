@@ -17,10 +17,14 @@
   transform: scale(1) !important;
 }
 
+.fadeIn {
+  opacity: 100 !important;
+}
+
 /* my name at the top */
 .name {
   font-size: 40px;
-  transform: scale(0);
+  opacity: 0;
   transition: all 2s;
 }
 
@@ -28,7 +32,7 @@
 .bio {
   transition: all 2s;
   text-align: center;
-  font-size: 30px;
+  font-size: 27px;
   margin-top: 10px;
   transform: scale(0);
 }
@@ -36,7 +40,7 @@
 .iam {
   transition: all 2s;
   text-align: center;
-  font-size: 45px;
+  font-size: 40px;
   margin-top: 10px;
   transform: scale(0);
 }
@@ -65,5 +69,19 @@
   justify-content: center;
   align-items: center;
   transition: all 2s;
-  transform: scale(0);
+  opacity: 0;
+}
+
+@media only screen and (max-width: 440px) and (min-width: 300px) {
+  .name {
+    font-size: 30px;
+  }
+
+  .bio {
+    font-size: 20px;
+  }
+
+  .iam {
+    font-size: 35px;
+  }
 }

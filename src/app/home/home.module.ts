@@ -7,15 +7,18 @@ import { AboutComponent } from "./about/about.component";
 import { ExperienceComponent } from "./experience/experience.component";
 import { PortfolioComponent } from "./portfolio/portfolio.component";
 import { NgxViewerModule } from "ngx-viewer";
+import { ContactComponent } from "./contact/contact.component";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
-  imports: [CommonModule, HomeRoutingModule, NgxViewerModule],
+  imports: [CommonModule, HomeRoutingModule, NgxViewerModule, FormsModule],
   declarations: [
     HomeComponent,
     PrimaryNavComponent,
     AboutComponent,
     ExperienceComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ContactComponent
   ]
 })
 export class HomeModule {}

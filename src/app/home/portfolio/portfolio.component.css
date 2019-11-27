@@ -10,6 +10,19 @@
   min-height: 100%;
 }
 
+.myGallery {
+  font-size: 35px;
+  text-align: center;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.clickToMax {
+  font-size: 18px;
+  opacity: 0;
+  transition: all 1.5s ease-in-out;
+}
+
 .screenshot {
   width: 40%;
   min-width: 200px;
@@ -21,14 +34,21 @@
   width: 100%;
   text-align: center;
   font-size: 30px;
+  transition: all 3s ease-in-out;
+}
+
+.screenshotContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 hr {
   width: 60%;
   border: 1px solid #e74c3c;
   margin: 20px 0;
-  transform: scale(0);
-  transition: all 2s ease-in-out;
+  opacity: 0;
+  transition: all 3s ease-in-out;
 }
 
 /* ANIMATIONS */
@@ -41,7 +61,24 @@ hr {
   transform: scale(0);
 }
 
+.fadeIn {
+  opacity: 100 !important;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
 img {
   transform: scale(0);
   transition: all 2s ease-in-out;
+}
+
+@media only screen and (max-width: 440px) and (min-width: 300px) {
+  .myGallery {
+    font-size: 25px;
+  }
+  .screenshotCaption {
+    font-size: 20px;
+  }
 }
